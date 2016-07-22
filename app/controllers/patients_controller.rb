@@ -52,7 +52,7 @@ class PatientsController < ApplicationController
   end
 
   def destroy
-    Rails.logger.debug "entred patient destroy"
+    Rails.logger.debug ">>>>>>>>entred patient destroy"
     @patient.destroy
     respond_to do |format|
       format.html { redirect_to patients_url}

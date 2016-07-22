@@ -59,7 +59,7 @@ class AppointmentsController < ApplicationController
   # DELETE /appointments/1
   # DELETE /appointments/1.json
   def destroy
-    Rails.logger.debug "entred appointment destroy"
+    Rails.logger.debug ">>>>>>> entred appointment destroy"
     @appointment.destroy
     respond_to do |format|
       format.html { redirect_to appointments_url }
